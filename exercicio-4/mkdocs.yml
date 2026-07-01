@@ -1,1 +1,8 @@
-site_name: My Docs
+site_name: Meu Projeto
+
+theme:
+  name: material
+
+extra:
+  version:
+    provider: mike
