@@ -1,0 +1,17 @@
+site_name: exercicio-3
+
+nav:
+  - Início: index.md
+  - Sobre: sobre.md
+
+theme:
+  name: material
+  palette:
+    primary: 'blue'
+    accent: 'red'
+
+plugins:
+  - search
+  - meta-descriptions
+  - git-revision-date-localized:
+      fallback_to_build_date: true
