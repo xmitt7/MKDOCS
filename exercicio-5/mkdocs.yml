@@ -1,0 +1,13 @@
+site_name: exercicio-5
+
+nav:
+  - atividades:
+      - atividade-1: 'atividade-1.md'
+      - atividade-2: 'atividade-2.md'
+      - atividade-3: 'atividade-3.md'
+      - atividade-4: 'atividade-4.md'
+      - atividade-5: 'atividade-5.md'
+
+theme:
+  name: material
+
