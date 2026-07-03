@@ -1,0 +1,42 @@
+openapi: 3.0.0
+info:
+  title: API de Produtos
+  version: "1.0.0"
+paths:
+  /produtos:
+    get:
+      summary: Lista todos os produtos
+      responses:
+        "200":
+          description: Lista de produtos retornada com sucesso
+    post:
+      summary: Cria um novo produto
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nome:
+                  type: string
+                preco:
+                  type: number
+      responses:
+        "201":
+          description: Produto criado com sucesso
+    delete:
+      summary: Exclui um produto existente
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Produto excluído com sucesso
+        "404":
+          description: Produto não encontrado
+
+       

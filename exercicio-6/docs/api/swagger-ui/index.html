@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Documentação da API</title>
+
+        <!-- CSS do Swagger -->
+        <link rel="stylesheet" href="./swagger-ui.css" />
+    </head>
+    <body>
+        <div id="swagger-ui"></div>
+
+        <!-- JS do Swagger -->
+        <script src="./swagger-ui-bundle.js"></script>
+        <script src="./swagger-ui-standalone-preset.js"></script>
+
+        <script>
+            window.onload = () => {
+                SwaggerUIBundle({
+                    url: "../openapi.yaml", // caminho para o OpenAPI
+                    dom_id: "#swagger-ui",
+                    presets: [
+                        SwaggerUIBundle.presets.apis,
+                        SwaggerUIStandalonePreset
+                    ],
+                    layout: "StandaloneLayout"
+                });
+            };
+        </script>
+    </body>
+</html>

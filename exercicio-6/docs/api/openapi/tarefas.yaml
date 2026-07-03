@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: API de Tarefas
+  version: "1.0.0"
+paths:
+  /tarefas:
+    get:
+      summary: Lista todas as tarefas
+      responses:
+        "200":
+          description: Lista de tarefas retornada com sucesso
+    post:
+      summary: Cria uma nova tarefa
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                titulo:
+                  type: string
+                concluida:
+                  type: boolean
+      responses:
+        "201":
+          description: Tarefa criada com sucesso
+  /tarefas/{id}:
+    put:
+      summary: Atualiza uma tarefa existente
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                titulo:
+                  type: string
+                concluida:
+                  type: boolean
+      responses:
+        "200":
+          description: Tarefa atualizada com sucesso

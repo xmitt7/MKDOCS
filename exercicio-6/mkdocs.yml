@@ -1,0 +1,14 @@
+site_name: exercicio-6
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - API de usuarios: api/usuarios.md
+  - API de Tarefas: api/tarefas.md
+  - API de Produtos: api/produtos.md
+
+plugins:
+  - search
+  - swagger-ui-tag 

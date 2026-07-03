@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: API de exemplo
+  description: exemplo de API para documentação automatizada
+  version: "1.0.0"
+paths:
+  /produto:
+    get:
+    tags:
+      - Produto
+      summary: Retorna uma lista de produtos
+      responses:
+        '200':
+          description: lista de produtos retornada com sucesso
+
+          content:
+            application/json:
+             example:
+             [
+                {
+                  "id": 1,
+                  "nome": "Produto A",
+                  "preco": 10.99
+                },
+                {
+                  "id": 2,
+                  "nome": "Produto B",
+                  "preco": 19.99
+                }
+              ]
+        
+      
