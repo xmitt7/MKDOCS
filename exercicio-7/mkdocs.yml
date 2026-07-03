@@ -1,0 +1,9 @@
+site_name: Sistema de Biblioteca
+theme:
+  name: material
+
+nav:
+  - Início: index.md
+  - Instalação: instalacao.md
+  - Configuração: configuracao.md
+  - API: api.md
