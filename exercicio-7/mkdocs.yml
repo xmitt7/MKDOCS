@@ -2,6 +2,9 @@ site_name: Sistema de Biblioteca
 theme:
   name: material
 
+  plugins:
+  - swagger-ui-tag
+
 nav:
   - Início: index.md
   - Instalação: instalacao.md

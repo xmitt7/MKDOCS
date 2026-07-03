@@ -1,3 +1,3 @@
-# Uso da API
+# API de Empréstimos
 
-A API expõe endpoints para consultar o acervo, cadastrar usuários e gerenciar empréstimos. Veja a seção de referência completa mais abaixo.
+<swagger-ui src="./openapi/emprestimos.yaml"/>
